@@ -20,7 +20,7 @@ If you want to keep up with changes to these skills, and any new ones I create, 
 npx skills@latest add marcodorneles-sys/ai-framework
 ```
 
-2. Pick the skills you want, and which coding agents you want to install them on. **Make sure you select `/setup-matt-pocock-skills`**.
+2. Pick the skills you want, and which coding agents you want to install them on. **Make sure you select `/setup-ai-framework`**.
 
 3. Run `/setup-ai-framework` in your agent. It will:
    - Ask you which issue tracker you want to use (GitHub, Linear, or local files)
