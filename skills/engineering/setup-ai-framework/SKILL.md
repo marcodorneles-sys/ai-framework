@@ -1,6 +1,6 @@
 ---
 name: setup-ai-framework
-description: Sets up an `## Agent skills` block in AGENTS.md/CLAUDE.md and `docs/agents/` so the engineering skills know this repo's issue tracker (GitHub or local markdown), triage label vocabulary, and domain doc layout. Run before first use of `to-issues`, `to-prd`, `triage`, `diagnose`, `tdd`, `improve-codebase-architecture`, or `zoom-out` — or if those skills appear to be missing context about the issue tracker, triage labels, or domain docs.
+description: Sets up an `## Agent skills` block in AGENTS.md/CLAUDE.md and `docs/agents/` so the engineering skills know this repo's issue tracker (GitHub or local markdown), triage label vocabulary, and domain doc layout. Run before first use of `to-issues`, `to-prd`, `triage`, `diagnose`, `tdd`, `improve-codebase-architecture`, or `zoom-out` — or if those skills appear to be missing GLOSSARY about the issue tracker, triage labels, or domain docs.
 disable-model-invocation: true
 ---
 
@@ -10,7 +10,7 @@ Scaffold the per-repo configuration that the engineering skills assume:
 
 - **Issue tracker** — where issues live (GitHub by default; local markdown is also supported out of the box)
 - **Triage labels** — the strings used for the five canonical triage roles
-- **Domain docs** — where `CONTEXT.md` and ADRs live, and the consumer rules for reading them
+- **Domain docs** — where `GLOSSARY.md` and ADRs live, and the consumer rules for reading them
 
 This is a prompt-driven skill, not a deterministic script. Explore, present what you found, confirm with the user, then write.
 
@@ -22,7 +22,7 @@ Look at the current repo to understand its starting state. Read whatever exists;
 
 - `git remote -v` and `.git/config` — is this a GitHub repo? Which one?
 - `AGENTS.md` and `CLAUDE.md` at the repo root — does either exist? Is there already an `## Agent skills` section in either?
-- `CONTEXT.md` and `CONTEXT-MAP.md` at the repo root
+- `GLOSSARY.md` and `GLOSSARY-MAP.md` at the repo root
 - `docs/adr/` and any `src/*/docs/adr/` directories
 - `docs/agents/` — does this skill's prior output already exist?
 - `.scratch/` — sign that a local-markdown issue tracker convention is already in use
@@ -52,7 +52,7 @@ The five canonical roles:
 
 - `needs-triage` — maintainer needs to evaluate
 - `needs-info` — waiting on reporter
-- `ready-for-agent` — fully specified, AFK-ready (an agent can pick it up with no human context)
+- `ready-for-agent` — fully specified, AFK-ready (an agent can pick it up with no human GLOSSARY)
 - `ready-for-human` — needs human implementation
 - `wontfix` — will not be actioned
 
@@ -60,12 +60,12 @@ Default: each role's string equals its name. Ask the user if they want to overri
 
 **Section C — Domain docs.**
 
-> Explainer: Some skills (`improve-codebase-architecture`, `diagnose`, `tdd`) read a `CONTEXT.md` file to learn the project's domain language, and `docs/adr/` for past architectural decisions. They need to know whether the repo has one global context or multiple (e.g. a monorepo with separate frontend/backend contexts) so they look in the right place.
+> Explainer: Some skills (`improve-codebase-architecture`, `diagnose`, `tdd`) read a `GLOSSARY.md` file to learn the project's domain language, and `docs/adr/` for past architectural decisions. They need to know whether the repo has one global GLOSSARY or multiple (e.g. a monorepo with separate frontend/backend GLOSSARYs) so they look in the right place.
 
 Confirm the layout:
 
-- **Single-context** — one `CONTEXT.md` + `docs/adr/` at the repo root. Most repos are this.
-- **Multi-context** — `CONTEXT-MAP.md` at the root pointing to per-context `CONTEXT.md` files (typically a monorepo).
+- **Single-GLOSSARY** — one `GLOSSARY.md` + `docs/adr/` at the repo root. Most repos are this.
+- **Multi-GLOSSARY** — `GLOSSARY-MAP.md` at the root pointing to per-GLOSSARY `GLOSSARY.md` files (typically a monorepo).
 
 ### 3. Confirm and edit
 
@@ -103,7 +103,7 @@ The block:
 
 ### Domain docs
 
-[one-line summary of layout — "single-context" or "multi-context"]. See `docs/agents/domain.md`.
+[one-line summary of layout — "single-GLOSSARY" or "multi-GLOSSARY"]. See `docs/agents/domain.md`.
 ```
 
 Then write the three docs files using the seed templates in this skill folder as a starting point:

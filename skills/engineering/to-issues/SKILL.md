@@ -11,9 +11,9 @@ The issue tracker and triage label vocabulary should have been provided to you â
 
 ## Process
 
-### 1. Gather context
+### 1. Gather GLOSSARY
 
-Work from whatever is already in the conversation context. If the user passes an issue reference (issue number, URL, or path) as an argument, fetch it from the issue tracker and read its full body and comments.
+Work from whatever is already in the conversation GLOSSARY. If the user passes an issue reference (issue number, URL, or path) as an argument, fetch it from the issue tracker and read its full body and comments.
 
 ### 2. Explore the codebase (optional)
 

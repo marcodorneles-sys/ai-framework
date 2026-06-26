@@ -20,7 +20,7 @@ Leverage at the interface — the amount of behaviour a caller (or test) can exe
 
 **Seam** _(from Michael Feathers)_
 A place where you can alter behaviour without editing in that place. The *location* at which a module's interface lives. Choosing where to put the seam is its own design decision, distinct from what goes behind it.
-_Avoid_: boundary (overloaded with DDD's bounded context).
+_Avoid_: boundary (overloaded with DDD's bounded GLOSSARY).
 
 **Adapter**
 A concrete thing that satisfies an interface at a seam. Describes *role* (what slot it fills), not substance (what's inside).
@@ -50,4 +50,4 @@ What maintainers get from depth. Change, bugs, knowledge, and verification conce
 
 - **Depth as ratio of implementation-lines to interface-lines** (Ousterhout): rewards padding the implementation. We use depth-as-leverage instead.
 - **"Interface" as the TypeScript `interface` keyword or a class's public methods**: too narrow — interface here includes every fact a caller must know.
-- **"Boundary"**: overloaded with DDD's bounded context. Say **seam** or **interface**.
+- **"Boundary"**: overloaded with DDD's bounded GLOSSARY. Say **seam** or **interface**.

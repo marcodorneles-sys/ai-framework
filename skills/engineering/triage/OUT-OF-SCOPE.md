@@ -30,7 +30,7 @@ This project does not support dark mode or user-facing theming.
 The rendering pipeline assumes a single color palette defined in
 `ThemeConfig`. Supporting multiple themes would require:
 
-- A theme context provider wrapping the entire component tree
+- A theme GLOSSARY provider wrapping the entire component tree
 - Per-component theme-aware style resolution
 - A persistence layer for user theme preferences
 
@@ -69,7 +69,7 @@ The reason should be durable. Avoid referencing temporary circumstances ("we're 
 
 ## When to check `.out-of-scope/`
 
-During triage (Step 1: Gather context), read all files in `.out-of-scope/`. When evaluating a new issue:
+During triage (Step 1: Gather GLOSSARY), read all files in `.out-of-scope/`. When evaluating a new issue:
 
 - Check if the request matches an existing out-of-scope concept
 - Matching is by concept similarity, not keyword — "night theme" matches `dark-mode.md`
