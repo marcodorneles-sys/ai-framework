@@ -1,11 +1,11 @@
 ---
 name: qa
-description: Interactive QA session where user reports bugs or issues conversationally, and the agent files GitHub issues. Explores the codebase in the background for GLOSSARY and domain language. Use when user wants to report bugs, do QA, file issues conversationally, or mentions "QA session".
+description: Interactive QA session where user reports bugs or issues conversationally, and the agent files GitHub issues. Explores the codebase in the background for context and domain language. Use when user wants to report bugs, do QA, file issues conversationally, or mentions "QA session".
 ---
 
 # QA Session
 
-Run an interactive QA session. The user describes problems they're encountering. You clarify, explore the codebase for GLOSSARY, and file GitHub issues that are durable, user-focused, and use the project's domain language.
+Run an interactive QA session. The user describes problems they're encountering. You clarify, explore the codebase for context, and file GitHub issues that are durable, user-focused, and use the project's domain language.
 
 ## For each issue the user raises
 
@@ -27,7 +27,7 @@ While talking to the user, kick off an Agent (subagent_type=Explore) in the back
 - Understand what the feature is supposed to do
 - Identify the user-facing behavior boundary
 
-This GLOSSARY helps you write a better issue — but the issue itself should NOT reference specific files, line numbers, or internal implementation details.
+This context helps you write a better issue — but the issue itself should NOT reference specific files, line numbers, or internal implementation details.
 
 ### 3. Assess scope: single issue or breakdown?
 
@@ -69,7 +69,7 @@ Use this template:
 2. [Use domain terms from the codebase, not internal module names]
 3. [Include relevant inputs, flags, or configuration]
 
-## Additional GLOSSARY
+## Additional context
 
 [Any extra observations from the user or from codebase exploration that help frame the issue — e.g. "this only happens when using the Docker layer, not the filesystem layer" — use domain language but don't cite files]
 ```
@@ -103,7 +103,7 @@ Use this template for each sub-issue:
 
 Or "None — can start immediately" if no blockers.
 
-## Additional GLOSSARY
+## Additional context
 
 [Any extra observations relevant to this slice]
 ```

@@ -21,7 +21,7 @@ During codebase exploration, also look for existing documentation:
 
 ### File structure
 
-Most repos have a single GLOSSARY:
+Most repos have a single context:
 
 ```
 /
@@ -33,7 +33,7 @@ Most repos have a single GLOSSARY:
 └── src/
 ```
 
-If a `GLOSSARY-MAP.md` exists at the root, the repo has multiple GLOSSARYs. The map points to where each one lives:
+If a `GLOSSARY-MAP.md` exists at the root, the repo has multiple contexts. The map points to where each one lives:
 
 ```
 /
@@ -43,7 +43,7 @@ If a `GLOSSARY-MAP.md` exists at the root, the repo has multiple GLOSSARYs. The 
 ├── src/
 │   ├── ordering/
 │   │   ├── GLOSSARY.md
-│   │   └── docs/adr/                 ← GLOSSARY-specific decisions
+│   │   └── docs/adr/                 ← context-specific decisions
 │   └── billing/
 │       ├── GLOSSARY.md
 │       └── docs/adr/
@@ -80,7 +80,7 @@ When a term is resolved, update `GLOSSARY.md` right there. Don't batch these up 
 Only offer to create an ADR when all three are true:
 
 1. **Hard to reverse** — the cost of changing your mind later is meaningful
-2. **Surprising without GLOSSARY** — a future reader will wonder "why did they do it this way?"
+2. **Surprising without context** — a future reader will wonder "why did they do it this way?"
 3. **The result of a real trade-off** — there were genuine alternatives and you picked one for specific reasons
 
 If any of the three is missing, skip the ADR. Use the format in [ADR-FORMAT.md](./ADR-FORMAT.md).

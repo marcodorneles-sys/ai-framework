@@ -10,7 +10,7 @@ Two-axis review of the diff between `HEAD` and a fixed point the user supplies:
 - **Standards** — does the code conform to this repo's documented coding standards?
 - **Spec** — does the code faithfully implement the originating issue / PRD / spec?
 
-Both axes run as **parallel sub-agents** so they don't pollute each other's GLOSSARY, then this skill aggregates their findings.
+Both axes run as **parallel sub-agents** so they don't pollute each other's context, then this skill aggregates their findings.
 
 The issue tracker should have been provided to you — run `/setup-ai-framework` if `docs/agents/issue-tracker.md` is missing.
 
@@ -37,7 +37,7 @@ Anything in the repo that documents how code should be written. Common locations
 
 - `CLAUDE.md`, `AGENTS.md`
 - `CONTRIBUTING.md`
-- `GLOSSARY.md`, `GLOSSARY-MAP.md`, per-GLOSSARY `GLOSSARY.md` files
+- `GLOSSARY.md`, `GLOSSARY-MAP.md`, per-context `GLOSSARY.md` files
 - `docs/adr/` (architectural decisions are standards)
 - `.editorconfig`, `eslint.config.*`, `biome.json`, `prettier.config.*`, `tsconfig.json` (machine-enforced standards — note them but don't re-check what tooling already checks)
 - Any `STYLE.md`, `STANDARDS.md`, `STYLEGUIDE.md`, or similar at the repo root or under `docs/`
