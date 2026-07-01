@@ -1,8 +1,7 @@
 ---
-
 name: to-frd
 description: Turn the current conversation context into an FRD and publish it to the project issue tracker when requested. Use when the user wants to create a Feature Requirements Document from the current context.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 This skill takes the current conversation context and codebase understanding and produces a Feature Requirements Document. Do NOT interview the user — just synthesize what you already know.
 
