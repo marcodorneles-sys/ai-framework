@@ -1,8 +1,7 @@
 ---
-
 name: spec-check
 description: Compare a set of candidate output artifacts against the source input artifacts they were derived from, score how faithfully the outputs reflect the intended requirements, and flag gaps, distortions, invented content, inconsistencies, and ambiguities that would distort implementation correctness. Produces a JSON scorecard plus a Markdown report and a verdict (PROCEED / REVIEW_RECOMMENDED / BLOCK) used to decide whether a human reviewer must review before implementation. Commonly used after GitHub Spec Kit generates files such as spec.md and requirements.md, but not limited to that workflow.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 # Spec Check
 
